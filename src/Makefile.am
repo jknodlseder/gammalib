@@ -4,9 +4,9 @@
 # we use srcdir/include for the static global include files
 # we use builddir/src for the generated include files to get found
 
-INCLUDES = -I$(top_srcdir)/include \
-           -I$(top_builddir)/src \
-           -I$(top_srcdir)/src/support
+AM_CPPFLAGS = -I$(top_srcdir)/include \
+              -I$(top_builddir)/src \
+              -I$(top_srcdir)/src/support
 
 # Set sub directories
 SUBDIRS = base \

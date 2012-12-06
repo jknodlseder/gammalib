@@ -53,13 +53,13 @@ MACOSX_DEPLOYMENT_TARGET=@CONFIGURE_MACOSX_DEPLOYMENT_TARGET@
 @EXPORT_MACOSX_DEPLOYMENT_TARGET@export MACOSX_DEPLOYMENT_TARGET
 
 # Include directories
-INCLUDES = -I$(top_srcdir)/include \
-           -I$(top_builddir)/src \
-           -I$(top_srcdir)/src/support \
-           $(INCL_MWL) \
-           $(INCL_CTA) \
-           $(INCL_LAT) \
-           $(INCL_COM)
+AM_CPPFLAGS = -I$(top_srcdir)/include \
+              -I$(top_builddir)/src \
+              -I$(top_srcdir)/src/support \
+              $(INCL_MWL) \
+              $(INCL_CTA) \
+              $(INCL_LAT) \
+              $(INCL_COM)
 
 # Test programs (those will be compiled)
 check_PROGRAMS = test_GSupport \

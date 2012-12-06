@@ -1,11 +1,11 @@
 ## Process this file with automake to produce Makefile.in
 
 # Set include directories
-INCLUDES = -I$(top_srcdir)/include \
-           -I$(top_srcdir)/src \
-           -I$(top_srcdir)/src/support \
-           -I$(top_srcdir)/inst/com/include \
-           -I$(top_srcdir)/inst/com/src
+AM_CPPFLAGS = -I$(top_srcdir)/include \
+              -I$(top_srcdir)/src \
+              -I$(top_srcdir)/src/support \
+              -I$(top_srcdir)/inst/com/include \
+              -I$(top_srcdir)/inst/com/src
 
 # Define sources for this directory
 sources = src/GCOMSupport.cpp \

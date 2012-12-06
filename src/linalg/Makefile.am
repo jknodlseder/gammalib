@@ -1,9 +1,9 @@
 ## Process this file with automake to produce Makefile.in
 
 # Set include directories
-INCLUDES = -I$(top_srcdir)/include \
-           -I$(top_builddir)/src \
-           -I$(top_srcdir)/src/support
+AM_CPPFLAGS = -I$(top_srcdir)/include \
+              -I$(top_builddir)/src \
+              -I$(top_srcdir)/src/support
 
 # Define sources for this directory
 sources = GVector.cpp \
